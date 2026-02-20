@@ -288,6 +288,42 @@ function initPodcastPlayer() {
   });
 }
 
+/* ========================================
+   THEME TOGGLE
+   ======================================== */
+function initThemeToggle() {
+  const toggle = document.querySelector('.theme-toggle');
+  if (!toggle) return;
+
+  const stored = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initial = stored || (prefersDark ? 'night' : 'day');
+
+  applyTheme(initial);
+
+  toggle.addEventListener('click', () => {
+    const isNight = document.body.classList.contains('night');
+    applyTheme(isNight ? 'day' : 'night');
+  });
+}
+
+function applyTheme(mode) {
+  const toggle = document.querySelector('.theme-toggle');
+  if (!toggle) return;
+
+  const isNight = mode === 'night';
+  document.body.classList.toggle('night', isNight);
+  toggle.setAttribute('aria-pressed', String(isNight));
+  toggle.setAttribute('aria-label', isNight ? 'Switch to day view' : 'Switch to night view');
+  toggle.textContent = isNight ? 'Day Mode' : 'Night Mode';
+
+  try {
+    localStorage.setItem('theme', mode);
+  } catch (e) {
+    // Ignore storage failures in private mode.
+  }
+}
+
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
@@ -337,5 +373,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initVisitCounter();
   initContactForm();
   initPodcastPlayer();
+  initThemeToggle();
   initReveal();
 });

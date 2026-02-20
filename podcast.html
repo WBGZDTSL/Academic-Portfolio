@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Signal &amp; The Noise — a podcast by Dr. Alex Chen exploring AI research, methods, and science communication." />
-  <title>Podcast — Dr. Alex Chen</title>
+  <meta name="description" content="Articles by Dr. Alex Chen — personal and technical reflections with images and text." />
+  <title>Articles — Dr. Alex Chen</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -17,7 +17,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="podcast.html">Articles</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav__search" role="search">
@@ -37,175 +37,95 @@
 
   <main>
     <!-- ===== PAGE HEADER ===== -->
-    <header class="page-header" aria-labelledby="podcast-page-title">
+    <header class="page-header" aria-labelledby="articles-page-title">
       <div class="container">
-        <span class="page-header__eyebrow">The Signal &amp; The Noise</span>
-        <h1 class="page-header__title" id="podcast-page-title">Podcast</h1>
-        <p class="page-header__desc">Long-form conversations with researchers at the frontier of AI — on methods, findings, failures, and what it all means.</p>
+        <span class="page-header__eyebrow">Research Notes</span>
+        <h1 class="page-header__title" id="articles-page-title">Articles</h1>
+        <p class="page-header__desc">Personal and technical writing that pairs visuals with clear, structured explanations.</p>
       </div>
     </header>
 
-    <!-- ===== PODCAST INTRO ===== -->
-    <section class="section section--alt" aria-labelledby="podcast-intro-title">
+    <!-- ===== ARTICLES INTRO ===== -->
+    <section class="section section--alt" aria-labelledby="articles-intro-title">
       <div class="container" style="max-width: 760px;">
-        <span class="section__label">About This Podcast</span>
-        <h2 class="section__title" id="podcast-intro-title">What We Do Here</h2>
+        <span class="section__label">About These Articles</span>
+        <h2 class="section__title" id="articles-intro-title">What You Will Find Here</h2>
         <div class="mt-3">
-          <p><em>The Signal &amp; The Noise</em> is a research-focused podcast committed to clarity, rigor, and depth. Each episode features a structured conversation — typically 40–50 minutes — with a researcher, practitioner, or thinker whose work deserves wider attention in and beyond the academic community.</p>
-          <p>We do not simplify for the sake of accessibility. We explain for the sake of understanding. Guests are asked to describe not just what they found, but how they found it, what didn't work, and what remains genuinely uncertain.</p>
-          <p>The podcast is organized into three series:</p>
-          <ul style="margin: 0.5rem 0 1rem 1.5rem; color:#333; line-height:2;">
-            <li><strong>NLP Series</strong> — language models, reasoning, and evaluation in depth</li>
-            <li><strong>ML Tools Series</strong> — infrastructure, reproducibility, and research engineering</li>
-            <li><strong>Open Science Series</strong> — publication norms, data sharing, and AI policy</li>
-          </ul>
-          <p>New episodes are released every two weeks. Subscribe on your preferred platform below.</p>
-          <div class="hero__cta mt-3">
-            <a class="btn btn--primary btn--sm" href="#" target="_blank" rel="noopener noreferrer">Apple Podcasts</a>
-            <a class="btn btn--secondary btn--sm" href="#" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a class="btn btn--secondary btn--sm" href="#" target="_blank" rel="noopener noreferrer">RSS Feed</a>
-          </div>
+          <p>These essays distill ongoing research into narrative form. Each piece pairs short visual sketches with rigorous explanations, so readers can grasp the intuition and the evidence without relying on audio or interviews.</p>
+          <p>Topics range from model evaluation and reproducibility to reflective essays on research practice. I focus on clarity, reproducible references, and a careful record of what remains uncertain.</p>
+          <p>New articles are published monthly and linked with relevant reading lists for deeper study.</p>
         </div>
       </div>
     </section>
 
     <hr class="divider" />
 
-    <!-- ===== EPISODES ===== -->
-    <section class="section" aria-labelledby="episodes-title">
+    <!-- ===== ARTICLE LIBRARY ===== -->
+    <section class="section" aria-labelledby="articles-title">
       <div class="container">
         <div class="section__header">
-          <span class="section__label">All Episodes</span>
-          <h2 class="section__title" id="episodes-title">Episode Archive</h2>
+          <span class="section__label">All Articles</span>
+          <h2 class="section__title" id="articles-title">Article Library</h2>
         </div>
 
-        <!-- Tag Filter -->
-        <div class="tag-filter" role="group" aria-label="Filter episodes by series or topic">
+        <div class="tag-filter" role="group" aria-label="Filter articles by topic">
           <span class="tag active" data-filter="all">All</span>
-          <span class="tag" data-filter="NLP Series">NLP Series</span>
-          <span class="tag" data-filter="ML Tools">ML Tools</span>
-          <span class="tag" data-filter="Open Science">Open Science</span>
-          <span class="tag" data-filter="Foundation Models">Foundation Models</span>
-          <span class="tag" data-filter="Cognitive Science">Cognitive Science</span>
-          <span class="tag" data-filter="AI Policy">AI Policy</span>
+          <span class="tag" data-filter="Reflection">Reflection</span>
           <span class="tag" data-filter="Research Methods">Research Methods</span>
+          <span class="tag" data-filter="Open Science">Open Science</span>
+          <span class="tag" data-filter="Productivity">Productivity</span>
+          <span class="tag" data-filter="AI Policy">AI Policy</span>
         </div>
 
-        <!-- Episode 4 -->
-        <div class="podcast-player" id="ep-4" data-duration="2640" data-tags="Research Methods,ML Tools" style="margin-bottom:1.5rem;" aria-label="Episode 4 player">
-          <div class="podcast-player__header">
-            <div class="podcast-player__icon" aria-hidden="true">▶</div>
-            <div class="podcast-player__info">
-              <div class="podcast-player__title">EP04 – Reproducibility in Machine Learning Research</div>
-              <div class="podcast-player__series">ML Tools Series · 44 min · Feb 2025</div>
+        <div class="blog-grid">
+          <article class="blog-card" data-tags="Reflection,Science Communication">
+            <img class="blog-card__image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><defs><linearGradient id='a1' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23f2ece2'/><stop offset='1' stop-color='%23d9d0c4'/></linearGradient></defs><rect width='640' height='360' fill='url(%23a1)'/><path d='M0 260 L160 160 L320 260 L480 140 L640 220 L640 360 L0 360 Z' fill='%23b6aea4'/><circle cx='480' cy='90' r='50' fill='%23f1d3a6'/></svg>" alt="Mountain sketch and rising sun" />
+            <div class="blog-card__content">
+              <div class="blog-card__meta">Feb 10, 2026 · Reflection</div>
+              <h3 class="blog-card__title">Why I Started a Research Podcast: A Reflection</h3>
+              <p class="blog-card__excerpt">What I learned by translating technical research into long-form conversations — and how that changed my writing habits.</p>
+              <div class="blog-card__footer">
+                <span class="blog-card__tag">Science Communication</span>
+                <a class="blog-card__link" href="portfolio.html#blog-1">Read Post →</a>
+              </div>
             </div>
-          </div>
-          <p style="font-size:0.9rem;color:#555;margin:0.75rem 0;line-height:1.6;">A conversation with Dr. Priya Sharma on the structural causes of non-reproducibility in ML papers, the limitations of current benchmarks, and practical steps — from code release norms to challenge track design — that the community can take.</p>
-          <div class="card__tags" style="margin-bottom:0.75rem;">
-            <span class="tag">Research Methods</span>
-            <span class="tag">ML Tools</span>
-          </div>
-          <div class="podcast-player__controls">
-            <button class="player-btn js-play-btn" aria-label="Play episode 4">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><polygon points="2,1 12,7 2,13"/></svg>
-            </button>
-            <div class="player-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Playback progress">
-              <div class="player-progress__fill"></div>
+          </article>
+          <article class="blog-card" data-tags="Research Methods,Open Science">
+            <img class="blog-card__image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><defs><linearGradient id='a2' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23e9eef2'/><stop offset='1' stop-color='%23cdd6dd'/></linearGradient></defs><rect width='640' height='360' fill='url(%23a2)'/><rect x='60' y='80' width='220' height='140' fill='%23b5c0c9'/><rect x='320' y='120' width='260' height='160' fill='%2399a6b0'/><circle cx='520' cy='80' r='36' fill='%23d7b88c'/></svg>" alt="Abstract charts and note cards" />
+            <div class="blog-card__content">
+              <div class="blog-card__meta">Jan 22, 2026 · Methods</div>
+              <h3 class="blog-card__title">The Reproducibility Crisis: What Researchers Can Do</h3>
+              <p class="blog-card__excerpt">A practical checklist for improving experimental transparency, from data curation to pre-registration.</p>
+              <div class="blog-card__footer">
+                <span class="blog-card__tag">Open Science</span>
+                <a class="blog-card__link" href="portfolio.html#blog-2">Read Post →</a>
+              </div>
             </div>
-            <span class="player-time">0:00 / 44:00</span>
-          </div>
-        </div>
-
-        <!-- Episode 3 -->
-        <div class="podcast-player" id="ep-3" data-duration="2520" data-tags="AI Policy,Open Science" style="margin-bottom:1.5rem;" aria-label="Episode 3 player">
-          <div class="podcast-player__header">
-            <div class="podcast-player__icon" aria-hidden="true">▶</div>
-            <div class="podcast-player__info">
-              <div class="podcast-player__title">EP03 – Open Source vs. Proprietary AI: Perspectives from the Field</div>
-              <div class="podcast-player__series">Open Science Series · 42 min · Jan 2025</div>
+          </article>
+          <article class="blog-card" data-tags="Productivity,Research Methods">
+            <img class="blog-card__image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><defs><linearGradient id='a3' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23f6efe7'/><stop offset='1' stop-color='%23e1d6cc'/></linearGradient></defs><rect width='640' height='360' fill='url(%23a3)'/><path d='M40 280 L160 200 L280 260 L400 190 L520 250 L600 210 L600 360 L40 360 Z' fill='%23cbbeb3'/><rect x='80' y='60' width='200' height='120' fill='%23b4aa9f'/></svg>" alt="Notebook, mountains, and landscape" />
+            <div class="blog-card__content">
+              <div class="blog-card__meta">Dec 18, 2025 · Workflow</div>
+              <h3 class="blog-card__title">Reading Papers Efficiently: A System That Works for Me</h3>
+              <p class="blog-card__excerpt">A repeatable pipeline for skimming, deep reading, and synthesizing results without losing the thread.</p>
+              <div class="blog-card__footer">
+                <span class="blog-card__tag">Productivity</span>
+                <a class="blog-card__link" href="portfolio.html#blog-3">Read Post →</a>
+              </div>
             </div>
-          </div>
-          <p style="font-size:0.9rem;color:#555;margin:0.75rem 0;line-height:1.6;">Three researchers with divergent views — from academia, an AI safety organization, and a technology company — discuss the trade-offs between openness and risk in AI model release. A structured disagreement that resists easy resolution.</p>
-          <div class="card__tags" style="margin-bottom:0.75rem;">
-            <span class="tag">AI Policy</span>
-            <span class="tag">Open Science</span>
-          </div>
-          <div class="podcast-player__controls">
-            <button class="player-btn js-play-btn" aria-label="Play episode 3">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><polygon points="2,1 12,7 2,13"/></svg>
-            </button>
-            <div class="player-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Playback progress">
-              <div class="player-progress__fill"></div>
+          </article>
+          <article class="blog-card" data-tags="AI Policy,Reflection">
+            <img class="blog-card__image" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><defs><linearGradient id='a4' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23eef1ef'/><stop offset='1' stop-color='%23cfd8d5'/></linearGradient></defs><rect width='640' height='360' fill='url(%23a4)'/><path d='M80 260 L200 180 L320 240 L440 170 L560 230 L560 360 L80 360 Z' fill='%23b9c1bd'/><circle cx='150' cy='110' r='40' fill='%23d3b28a'/></svg>" alt="Urban skyline and policy notes" />
+            <div class="blog-card__content">
+              <div class="blog-card__meta">Nov 04, 2025 · Policy</div>
+              <h3 class="blog-card__title">Open Models, Closed Consequences</h3>
+              <p class="blog-card__excerpt">A grounded look at AI policy trade-offs when openness meets safety, with a focus on real-world incentives.</p>
+              <div class="blog-card__footer">
+                <span class="blog-card__tag">AI Policy</span>
+                <a class="blog-card__link" href="portfolio.html#blog-4">Read Post →</a>
+              </div>
             </div>
-            <span class="player-time">0:00 / 42:00</span>
-          </div>
-        </div>
-
-        <!-- Episode 2 -->
-        <div class="podcast-player" id="ep-2" data-duration="3000" data-tags="Cognitive Science,NLP Series" style="margin-bottom:1.5rem;" aria-label="Episode 2 player">
-          <div class="podcast-player__header">
-            <div class="podcast-player__icon" aria-hidden="true">▶</div>
-            <div class="podcast-player__info">
-              <div class="podcast-player__title">EP02 – Talking with a Cognitive Scientist About AI Cognition</div>
-              <div class="podcast-player__series">NLP Series · 50 min · Dec 2024</div>
-            </div>
-          </div>
-          <p style="font-size:0.9rem;color:#555;margin:0.75rem 0;line-height:1.6;">Prof. Elena Kovacs argues that most AI "cognition" claims misuse cognitive science concepts. We discuss compositionality, systematicity, and what rigorous comparison between human and machine reasoning would actually require.</p>
-          <div class="card__tags" style="margin-bottom:0.75rem;">
-            <span class="tag">Cognitive Science</span>
-            <span class="tag">NLP Series</span>
-          </div>
-          <div class="podcast-player__controls">
-            <button class="player-btn js-play-btn" aria-label="Play episode 2">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><polygon points="2,1 12,7 2,13"/></svg>
-            </button>
-            <div class="player-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Playback progress">
-              <div class="player-progress__fill"></div>
-            </div>
-            <span class="player-time">0:00 / 50:00</span>
-          </div>
-        </div>
-
-        <!-- Episode 1 -->
-        <div class="podcast-player" id="ep-1" data-duration="2400" data-tags="Foundation Models,NLP Series" style="margin-bottom:1.5rem;" aria-label="Episode 1 player">
-          <div class="podcast-player__header">
-            <div class="podcast-player__icon" aria-hidden="true">▶</div>
-            <div class="podcast-player__info">
-              <div class="podcast-player__title">EP01 – The Foundation Model Landscape in 2024</div>
-              <div class="podcast-player__series">NLP Series · 40 min · Nov 2024</div>
-            </div>
-          </div>
-          <p style="font-size:0.9rem;color:#555;margin:0.75rem 0;line-height:1.6;">The inaugural episode. A solo overview of the state of foundation models: what we know empirically, what remains speculative, and how to read the literature critically given the pace of publication and the prevalence of benchmark overfitting.</p>
-          <div class="card__tags" style="margin-bottom:0.75rem;">
-            <span class="tag">Foundation Models</span>
-            <span class="tag">NLP Series</span>
-          </div>
-          <div class="podcast-player__controls">
-            <button class="player-btn js-play-btn" aria-label="Play episode 1">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><polygon points="2,1 12,7 2,13"/></svg>
-            </button>
-            <div class="player-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Playback progress">
-              <div class="player-progress__fill"></div>
-            </div>
-            <span class="player-time">0:00 / 40:00</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- ===== BLOG POST FROM PODCAST ===== -->
-    <section class="section section--alt" id="blog-1" aria-labelledby="blog-1-title">
-      <div class="container" style="max-width: 760px;">
-        <span class="section__label">Reflection</span>
-        <h2 class="section__title" id="blog-1-title">Why I Started a Research Podcast</h2>
-        <div class="mt-3">
-          <p>The initial impulse was frustration. Not with research itself, but with how research gets shared. Conferences are gate-kept. Preprints are noisy. Twitter moves too fast, and academic blogs move too slow.</p>
-          <p>What I wanted was a format that could hold a genuinely complex idea — and sit with it for forty minutes. A format that could ask a researcher not just what they found, but <em>what surprised them</em>, and <em>what they would have done differently</em>. Those are the conversations that happen in the corridor after a talk, never in the paper.</p>
-          <p>A podcast turned out to be the right medium. Audio is intimate. It tolerates ambiguity in ways that written text does not. And it reaches people who would never click through to an abstract.</p>
-          <p>Three years and forty episodes later, I still think it was the right decision. The show has led to collaborations I wouldn't have found otherwise, and to conversations I couldn't have predicted. That is reason enough.</p>
-          <a class="btn btn--secondary btn--sm mt-3" href="podcast.html#episodes-title">Browse Episodes →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -225,17 +145,17 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="podcast.html">Articles</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div>
-          <div class="footer__heading">Podcast</div>
+          <div class="footer__heading">Articles</div>
           <ul class="footer__links" role="list">
-            <li><a href="#">Apple Podcasts</a></li>
-            <li><a href="#">Spotify</a></li>
-            <li><a href="#">RSS Feed</a></li>
-            <li><a href="contact.html">Suggest a Guest</a></li>
+            <li><a href="portfolio.html#blog-1">Featured Essay</a></li>
+            <li><a href="portfolio.html#blog-2">Methods Notes</a></li>
+            <li><a href="portfolio.html#blog-3">Workflow Series</a></li>
+            <li><a href="contact.html">Suggest a Topic</a></li>
           </ul>
         </div>
       </div>
