@@ -15,15 +15,10 @@ const SITE_DATA = [
   { type: 'Publication', title: 'Efficient Fine-Tuning Strategies for Domain-Specific Foundation Models', url: 'portfolio.html#pub-3', tags: ['Machine Learning', 'NLP'] },
   { type: 'Publication', title: 'Graph Neural Networks for Knowledge Graph Completion', url: 'portfolio.html#pub-4', tags: ['Graph Learning', 'Knowledge Graphs'] },
   // Blog Posts
-  { type: 'Blog', title: 'Why I Started a Research Podcast: A Reflection', url: 'podcast.html#blog-1', tags: ['Reflection', 'Science Communication'] },
-  { type: 'Blog', title: 'The Reproducibility Crisis: What Researchers Can Do', url: 'portfolio.html#blog-2', tags: ['Research Methods', 'Open Science'] },
-  { type: 'Blog', title: 'Reading Papers Efficiently: A System That Works for Me', url: 'portfolio.html#blog-3', tags: ['Productivity', 'Research Methods'] },
-  { type: 'Blog', title: 'Navigating the Academic Job Market as a PhD Candidate', url: 'portfolio.html#blog-4', tags: ['Academic Career'] },
-  // Podcasts
-  { type: 'Podcast', title: 'EP01 – The Foundation Model Landscape in 2024', url: 'podcast.html#ep-1', tags: ['Foundation Models', 'NLP Series'] },
-  { type: 'Podcast', title: 'EP02 – Talking with a Cognitive Scientist About AI Cognition', url: 'podcast.html#ep-2', tags: ['Cognitive Science', 'NLP Series'] },
-  { type: 'Podcast', title: 'EP03 – Open Source vs. Proprietary AI: Perspectives from the Field', url: 'podcast.html#ep-3', tags: ['AI Policy', 'Open Science'] },
-  { type: 'Podcast', title: 'EP04 – Reproducibility in Machine Learning Research', url: 'podcast.html#ep-4', tags: ['Research Methods', 'ML Tools'] },
+  { type: 'Blog', title: 'Why I Started a Research Podcast: A Reflection', url: 'articles.html#blog-1', tags: ['Reflection', 'Science Communication'] },
+  { type: 'Blog', title: 'The Reproducibility Crisis: What Researchers Can Do', url: 'articles.html#blog-2', tags: ['Research Methods', 'Open Science'] },
+  { type: 'Blog', title: 'Reading Papers Efficiently: A System That Works for Me', url: 'articles.html#blog-3', tags: ['Productivity', 'Research Methods'] },
+  { type: 'Blog', title: 'Navigating the Academic Job Market as a PhD Candidate', url: 'articles.html#blog-4', tags: ['Academic Career'] },
   // Downloads
   { type: 'Download', title: 'Curriculum Vitae (PDF)', url: 'assets/downloads/cv.pdf', tags: ['CV', 'Resume'] },
   { type: 'Download', title: 'Research Statement', url: 'assets/downloads/research-statement.pdf', tags: ['Research'] },
